@@ -69,7 +69,7 @@ int main(void)
     fclose(outfile);
 
     /* ________________________________程序结束 */
-	printf("\n%s\n",message[1]);
+    printf("\n%s\n",message[1]);
     printf("Press 'q' key to exit.");
     // while('q' != quitkey){scanf("%c",&quitkey);}
     while('q' != getchar());
