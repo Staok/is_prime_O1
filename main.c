@@ -30,6 +30,11 @@ int main(void)
         ,outfile
     );
 
+    fputs(
+        "    do{\n\n"
+        ,outfile
+    );
+
     for(unsigned long long i = 1;i <= HOW_MANY_DO_YOU_WANT;i++)
     {
         fprintf(
@@ -55,11 +60,21 @@ int main(void)
             );
         }
 
-        fprintf(
-            outfile,
+        fputs(
+            "        break;\n"
+            ,outfile
+        );
+
+        fputs(
             "    }\n\n"
+            ,outfile
         );
     }
+
+    fputs(
+        "    }while(0);\n\n"
+        ,outfile
+    );
 
     fputs("    system(\"pause\");\n\n",outfile);
     fputs("    return 0;\n\n",outfile);
