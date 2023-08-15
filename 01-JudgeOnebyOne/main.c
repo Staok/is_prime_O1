@@ -3,8 +3,8 @@
 #include <math.h>
 
 
-/* 请问您生成一个判断多少以内的质数的时间复杂度为O(1)的程序呢亲~
-    只要您的磁盘容得下呢~经验值，填入10w生成的文件约为10MB */
+/* 请问您生成一个判断多少以内的质数的时间复杂度为伪O(1)的程序呢亲~
+    只要您的磁盘容得下呢~经验值，填入10w 生成的文件约为10MB */
 #define HOW_MANY_DO_YOU_WANT 1000
 
 unsigned char is_prime(unsigned long long num);
